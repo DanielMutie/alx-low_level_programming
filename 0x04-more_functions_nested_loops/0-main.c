@@ -1,20 +1,32 @@
-#include <stdio.h>
-
-int _isupper(int c);
+#include "main.h"
 
 /**
- * main - check the code.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
-	char c;
+    char c;
+    int result;
 
-	c = 'A';
-	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isupper(c));
-	return (0);
+    c = 'A';
+    result = _isupper(c);
+    _putchar(c);
+    _putchar(':');
+    _putchar(' ');
+    _putchar(result + '0');
+    _putchar('\n');
+
+    c = 'a';
+    result = _isupper(c);
+    _putchar(c);
+    _putchar(':');
+    _putchar(' ');
+    _putchar(result + '0');
+    _putchar('\n');
+
+    return (0);
 }
+
 
