@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 15
+#define PASSWORD_LENGTH 12
 
 /**
  * main - Entry point
@@ -23,8 +23,7 @@ int main(void)
 
 	password[PASSWORD_LENGTH] = '\0';
 
-	printf("Tada! Congrats\n");
-	fprintf(stderr, "%s\n", password);
+	printf("%s\n", password);
 
 	return (0);
 }
